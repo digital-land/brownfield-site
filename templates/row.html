@@ -2,7 +2,7 @@
 {%- from "digital-land-frontend/components/map/macro.html" import dlMap %}
 {%- from "digital-land-frontend/components/data-record/macro.html" import dlDataRecordPanel %}
 
-{% set row_name = row['site-address'] if row['site-address'] else row['slug'] %}
+{% set row_name = row['name'] if row['name'] else row['slug'] %}
 
 {% block head %}
 {{ super() }}
@@ -43,11 +43,11 @@
 {% block content %}
 
 <span class="govuk-caption-xl">{{ data_type }}</span>
-<h1 class="govuk-heading-xl">{{ row_name|truncate(33) }}</h1>
+<h1 class="govuk-heading-xl">{{ row_name }}</h1>
 
 {% set areaproperties %}
 {% for i in row.keys() %}
-{% if i not in ["slug", "resource", "geometry", "has_geometry"] %}
+{% if i not in ["id", "resource", "geometry", "has_geometry"] %}
 <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
     {{ i }}
@@ -71,14 +71,14 @@
             "identifier": row['site'] if row['site'] else row['slug'],
             "resource": {
                 "identifier": row['resource'],
-                "url": "https://github.com/digital-land/brownland-land-collection/blob/master/collection/resource/" + row['resource']
+                "url": "https://github.com/digital-land/" + data_type + "-collection/tree/main/transformed/" + data_type + "/" + row['resource'] + ".csv"
             },
             "html": areaproperties
         }) }}
     </div>
 </div>
 
-{% if row["point"] %}
+{% if row["has_geometry"] %}
 {{ dlMap({
     "id": "aMap",
     "classes": "govuk-!-margin-top-4 govuk-!-margin-bottom-2",
@@ -95,10 +95,6 @@
 {{ super() }}
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({
-        geojsonOptions: {
-            geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
-        }
-    })
+    const mapComponent = new DLMaps.Map($mapElement).init({})
 </script>
 {% endblock %}
