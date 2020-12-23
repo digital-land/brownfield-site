@@ -151,7 +151,7 @@
     
   
     
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">local-authority-eng/LEW/bro...</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Thanet Wharf, Creekside...</li>
     
   
   </ol>
@@ -160,7 +160,7 @@
           
 
 <span class="govuk-caption-xl">brownfield-site</span>
-<h1 class="govuk-heading-xl">local-authority-eng/LEW/brownf...</h1>
+<h1 class="govuk-heading-xl">Thanet Wharf, Creekside Village East</h1>
 
 
 
@@ -282,15 +282,39 @@
 
 
 
+<div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+    slug
+    </dt>
+    <dd class="govuk-summary-list__value">
+    
+    local-authority-eng/LEW/brownfield-site-NX015
+    
+    </dd>
+</div>
+
 
 
 
     
     </dl>
-    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownland-land-collection/blob/master/collection/resource/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b" class="govuk-link">636ac78dd9a11bc53...</a></footer>
+    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv" class="govuk-link">636ac78dd9a11bc53...</a></footer>
     </article>
 
     </div>
+</div>
+
+
+
+<div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="aMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+    
 </div>
 
 
@@ -404,11 +428,7 @@
 
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({
-        geojsonOptions: {
-            geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
-        }
-    })
+    const mapComponent = new DLMaps.Map($mapElement).init({})
 </script>
 
   </body>
