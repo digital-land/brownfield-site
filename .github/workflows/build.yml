@@ -6,7 +6,7 @@ on:
       - 'docs/**'
       - 'data/**'
     branches:
-      - master
+      - main
   schedule:
     - cron: '30 5 * * *'
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
         git config user.email "${DLB_BOT_EMAIL}"
         git config user.name "${DLB_BOT_USERNAME}"
         git remote set-url origin https://${DLB_BOT_USERNAME}:${DLB_BOT_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        git checkout master
+        git checkout main
 
     - name: Update makerules
       run: make makerules
