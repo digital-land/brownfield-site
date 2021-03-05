@@ -12,7 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
 <script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
@@ -119,362 +119,522 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
                 <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">50</span> records.</p>
                 <p class="govuk-visually-hidden">There are
                     <span class="js-accessible-list-count">50</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
-  <tbody><tr data-filter="item">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0001" data-filter="match-content">RBR-17-0001</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0001" data-filter="match-content">brownfield-site:RBR/17/0001</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Pouparts Yard And Land Rear Of 84A Hampton Road Twickenham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0002" data-filter="match-content">RBR-17-0002</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0002" data-filter="match-content">brownfield-site:RBR/17/0002</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">St Paul&#39;s School, Lonsdale Road, Barnes</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0006" data-filter="match-content">RBR-17-0006</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0006" data-filter="match-content">brownfield-site:RBR/17/0006</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">84 Whitton Road Twickenham TW1 1BS</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0007" data-filter="match-content">RBR-17-0007</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0007" data-filter="match-content">brownfield-site:RBR/17/0007</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Becketts Wharf And Osbourne House Becketts Place Hampton Wick</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0008" data-filter="match-content">RBR-17-0008</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0008" data-filter="match-content">brownfield-site:RBR/17/0008</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Twickenham Railway Station London Road Twickenham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0009" data-filter="match-content">RBR-17-0009</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0009" data-filter="match-content">brownfield-site:RBR/17/0009</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">37 Grosvenor Road Twickenham TW1 4AD</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0011" data-filter="match-content">RBR-17-0011</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0011" data-filter="match-content">brownfield-site:RBR/17/0011</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lockcorp House 75 Norcutt Road Twickenham TW2 6SR</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0012" data-filter="match-content">RBR-17-0012</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0012" data-filter="match-content">brownfield-site:RBR/17/0012</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">HMP Latchmere House Church Road Ham Richmond TW10 5HH</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0014" data-filter="match-content">RBR-17-0014</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0014" data-filter="match-content">brownfield-site:RBR/17/0014</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">29 Charles Street Barnes London</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0015" data-filter="match-content">RBR-17-0015</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0015" data-filter="match-content">brownfield-site:RBR/17/0015</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">2 Broad Street Teddington TW11 8RF</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0016" data-filter="match-content">RBR-17-0016</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0016" data-filter="match-content">brownfield-site:RBR/17/0016</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Richmond Film Services Park Lane Richmond TW9 2RA</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0017" data-filter="match-content">RBR-17-0017</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0017" data-filter="match-content">brownfield-site:RBR/17/0017</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">97A White Hart Lane Barnes London SW13 0JL</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0018" data-filter="match-content">RBR-17-0018</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0018" data-filter="match-content">brownfield-site:RBR/17/0018</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Christ Church Station Road Teddington</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0019" data-filter="match-content">RBR-17-0019</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0019" data-filter="match-content">brownfield-site:RBR/17/0019</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Teddington Studios Broom Road Teddington</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0020" data-filter="match-content">RBR-17-0020</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0020" data-filter="match-content">brownfield-site:RBR/17/0020</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Avenue Centre 1 Normansfield Avenue Hampton Wick Teddington TW11 9RP</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0021" data-filter="match-content">RBR-17-0021</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0021" data-filter="match-content">brownfield-site:RBR/17/0021</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Silver Birches 2 - 6 Marchmont Road Richmond TW10 6HH</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0022" data-filter="match-content">RBR-17-0022</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0022" data-filter="match-content">brownfield-site:RBR/17/0022</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">29 George Street Richmond TW9 1HY</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0023" data-filter="match-content">RBR-17-0023</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0023" data-filter="match-content">brownfield-site:RBR/17/0023</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Police Station, 60-68 Station Road, Hampton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0024" data-filter="match-content">RBR-17-0024</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0024" data-filter="match-content">brownfield-site:RBR/17/0024</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">275 Sandycombe Road Richmond TW9 3LU</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0025" data-filter="match-content">RBR-17-0025</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0025" data-filter="match-content">brownfield-site:RBR/17/0025</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">2 High Street, Teddington</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0026" data-filter="match-content">RBR-17-0026</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0026" data-filter="match-content">brownfield-site:RBR/17/0026</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">9 Tudor Road and 27 Milton Road, Hampton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0027" data-filter="match-content">RBR-17-0027</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0027" data-filter="match-content">brownfield-site:RBR/17/0027</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land At Junction Of A316 And Langhorn Drive And Richmond College Site (Including Craneford Way East Playing Fields And Marsh Farm Lane) Egerton Road Twickenham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0028" data-filter="match-content">RBR-17-0028</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0028" data-filter="match-content">brownfield-site:RBR/17/0028</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sandycombe Centre, 1-9 Sandycombe Road, Richmond</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0029" data-filter="match-content">RBR-17-0029</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0029" data-filter="match-content">brownfield-site:RBR/17/0029</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rear Of 74 Church Road, Barnes</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0030" data-filter="match-content">RBR-17-0030</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0030" data-filter="match-content">brownfield-site:RBR/17/0030</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mereway Day Centre, Mereway Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0031" data-filter="match-content">RBR-17-0031</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0031" data-filter="match-content">brownfield-site:RBR/17/0031</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Telephone Exchange, Ashdale Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0032" data-filter="match-content">RBR-17-0032</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0032" data-filter="match-content">brownfield-site:RBR/17/0032</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kneller Hall, Whitton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0033" data-filter="match-content">RBR-17-0033</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0033" data-filter="match-content">brownfield-site:RBR/17/0033</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ham Central Area</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0034" data-filter="match-content">RBR-17-0034</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0034" data-filter="match-content">brownfield-site:RBR/17/0034</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cassel Hospital, Ham Common, Ham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0035" data-filter="match-content">RBR-17-0035</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0035" data-filter="match-content">brownfield-site:RBR/17/0035</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">St Michael&#39;s Convent, 56 Ham Common, Ham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0036" data-filter="match-content">RBR-17-0036</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0036" data-filter="match-content">brownfield-site:RBR/17/0036</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Richmond Station and above track, The Quadrant</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0037" data-filter="match-content">RBR-17-0037</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0037" data-filter="match-content">brownfield-site:RBR/17/0037</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Platts Eyott</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0038" data-filter="match-content">RBR-17-0038</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0038" data-filter="match-content">brownfield-site:RBR/17/0038</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Friars Lane Car Park</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0039" data-filter="match-content">RBR-17-0039</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0039" data-filter="match-content">brownfield-site:RBR/17/0039</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sainsbury’s, Manor Road/Lower Richmond Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0040" data-filter="match-content">RBR-17-0040</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0040" data-filter="match-content">brownfield-site:RBR/17/0040</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Budweiser Stag Brewery, Mortlake</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0041" data-filter="match-content">RBR-17-0041</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0041" data-filter="match-content">brownfield-site:RBR/17/0041</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mortlake And Barnes Delivery Office, 2-12 Mortlake High Street, Mortlake</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0042" data-filter="match-content">RBR-17-0042</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0042" data-filter="match-content">brownfield-site:RBR/17/0042</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kew Biothane Plant, Mellis Avenue</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0043" data-filter="match-content">RBR-17-0043</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0043" data-filter="match-content">brownfield-site:RBR/17/0043</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Telephone Exchange, Upper Richmond Road, East Sheen</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0044" data-filter="match-content">RBR-17-0044</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0044" data-filter="match-content">brownfield-site:RBR/17/0044</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Barnes Hospital</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0045" data-filter="match-content">RBR-17-0045</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0045" data-filter="match-content">brownfield-site:RBR/17/0045</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hampton Traffic Unit, 60-68, Station Road, Hampton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0046" data-filter="match-content">RBR-17-0046</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0046" data-filter="match-content">brownfield-site:RBR/17/0046</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hampton Delivery Office, Rosehill, Hampton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0047" data-filter="match-content">RBR-17-0047</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0047" data-filter="match-content">brownfield-site:RBR/17/0047</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Telephone Exchange, High Street, Teddington</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0048" data-filter="match-content">RBR-17-0048</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0048" data-filter="match-content">brownfield-site:RBR/17/0048</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Teddington Delivery Office, 19 High Street, Teddington</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0049" data-filter="match-content">RBR-17-0049</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0049" data-filter="match-content">brownfield-site:RBR/17/0049</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Strathmore Centre, Strathmore Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0050" data-filter="match-content">RBR-17-0050</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0050" data-filter="match-content">brownfield-site:RBR/17/0050</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Station Yard, Twickenham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0051" data-filter="match-content">RBR-17-0051</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0051" data-filter="match-content">brownfield-site:RBR/17/0051</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Telephone Exchange, Garfield Road, Twickenham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0052" data-filter="match-content">RBR-17-0052</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0052" data-filter="match-content">brownfield-site:RBR/17/0052</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Police Station, London Road, Twickenham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0053" data-filter="match-content">RBR-17-0053</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0053" data-filter="match-content">brownfield-site:RBR/17/0053</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Twickenham Riverside (Former Pool Site) and south of King Street</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0054" data-filter="match-content">RBR-17-0054</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0054" data-filter="match-content">brownfield-site:RBR/17/0054</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at 149 - 151 Heath Road Twickneham</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBR-17-0055" data-filter="match-content">RBR-17-0055</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBR-17-0055" data-filter="match-content">brownfield-site:RBR/17/0055</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">63 - 71 High Street, Hampton Hill</p>
@@ -482,8 +642,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -572,6 +732,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>

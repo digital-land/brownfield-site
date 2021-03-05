@@ -12,7 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
 <script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
@@ -119,439 +119,632 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
                 <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">61</span> records.</p>
                 <p class="govuk-visually-hidden">There are
                     <span class="js-accessible-list-count">61</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
-  <tbody><tr data-filter="item">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR1" data-filter="match-content">BLR1</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR1" data-filter="match-content">brownfield-site:BLR1</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Gas Holder Site Homesdale Road Bromley BR1 2UE</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR2" data-filter="match-content">BLR2</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR2" data-filter="match-content">brownfield-site:BLR2</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land adjacent to Bickley StationBR1 2EB</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR3" data-filter="match-content">BLR3</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR3" data-filter="match-content">brownfield-site:BLR3</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Opportunity Site B Corner of Tweedy Road/London Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR4" data-filter="match-content">BLR4</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR4" data-filter="match-content">brownfield-site:BLR4</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Opportunity Site C Old Town Hall 30 Tweedy Road BR1 3FE</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR5" data-filter="match-content">BLR5</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR5" data-filter="match-content">brownfield-site:BLR5</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Opportunity Site P Sainsbury&#39;s West Street Bromley BR1 1TP</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR6" data-filter="match-content">BLR6</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR6" data-filter="match-content">brownfield-site:BLR6</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bromley Civic Centre Stockwell Close BR1 3UH</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR7" data-filter="match-content">BLR7</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR7" data-filter="match-content">brownfield-site:BLR7</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">West of Bromley High Street and Land at Bromley South BR1/BR2</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR8" data-filter="match-content">BLR8</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR8" data-filter="match-content">brownfield-site:BLR8</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land adjacent to Bromley North Station Tweedy Road Bromley BR1</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR9" data-filter="match-content">BLR9</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR9" data-filter="match-content">brownfield-site:BLR9</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Hill Car Park &amp; Adjacent LandsBR2 0DA</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR10" data-filter="match-content">BLR10</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR10" data-filter="match-content">brownfield-site:BLR10</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Banbury House Bushell Way Chislehurst BR7 6SF</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR11" data-filter="match-content">BLR11</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR11" data-filter="match-content">brownfield-site:BLR11</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bromley Valley Gym and Adjacent Lands Chipperfield Road St Paul’s Cray BR5 2QR</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR12" data-filter="match-content">BLR12</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR12" data-filter="match-content">brownfield-site:BLR12</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Small Halls York Rise Orpington BR6 8AD</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR13" data-filter="match-content">BLR13</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR13" data-filter="match-content">brownfield-site:BLR13</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">18-44 Homefield Rise Orpington BR6 ORU</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR14" data-filter="match-content">BLR14</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR14" data-filter="match-content">brownfield-site:BLR14</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">6 Woodlands Road BR1 2AF Bickley</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR15" data-filter="match-content">BLR15</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR15" data-filter="match-content">brownfield-site:BLR15</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bickley And Widmore Working Mens Club Tylney Road BR1 2SH</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR16" data-filter="match-content">BLR16</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR16" data-filter="match-content">brownfield-site:BLR16</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">248 Southlands Road BR1 2EQ</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR17" data-filter="match-content">BLR17</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR17" data-filter="match-content">brownfield-site:BLR17</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">42 Orchard Road BR1 2PS</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR18" data-filter="match-content">BLR18</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR18" data-filter="match-content">brownfield-site:BLR18</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merrywood Bickley Park Road BR1 2AY</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR19" data-filter="match-content">BLR19</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR19" data-filter="match-content">brownfield-site:BLR19</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site of Former 41 Sunningvale Avenue Sunningvale Close TN16 3BX</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR20" data-filter="match-content">BLR20</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR20" data-filter="match-content">brownfield-site:BLR20</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bromley Common Liveries Cameron Buildings Bromley Common Bromley BR2 8HA</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR21" data-filter="match-content">BLR21</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR21" data-filter="match-content">brownfield-site:BLR21</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ravensbourne Westerham Road BR2 6HE</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR22" data-filter="match-content">BLR22</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR22" data-filter="match-content">brownfield-site:BLR22</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">H G Wells Centre St Marks Road BR2 9HG</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR23" data-filter="match-content">BLR23</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR23" data-filter="match-content">brownfield-site:BLR23</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">7 Sandford Road BR2 9AL</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR24" data-filter="match-content">BLR24</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR24" data-filter="match-content">brownfield-site:BLR24</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">33 Hammelton Road BR1 3PZ</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR25" data-filter="match-content">BLR25</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR25" data-filter="match-content">brownfield-site:BLR25</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">9 London Road BR1 1BY</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR26" data-filter="match-content">BLR26</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR26" data-filter="match-content">brownfield-site:BLR26</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Upfield Hillbrow Road BR1 4JL</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR27" data-filter="match-content">BLR27</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR27" data-filter="match-content">brownfield-site:BLR27</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">7 Beckenham Lane BR2 0DA</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR28" data-filter="match-content">BLR28</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR28" data-filter="match-content">brownfield-site:BLR28</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ravensbourne Westerham Road BR2 6HE</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR29" data-filter="match-content">BLR29</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR29" data-filter="match-content">brownfield-site:BLR29</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hasells Nursery Jackson Road BR2 8NS</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR30" data-filter="match-content">BLR30</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR30" data-filter="match-content">brownfield-site:BLR30</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ontario Centre Helegan Close BR6 9XJ</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR31" data-filter="match-content">BLR31</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR31" data-filter="match-content">brownfield-site:BLR31</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">63-65 Chislehurst Road BR7 5NP</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR32" data-filter="match-content">BLR32</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR32" data-filter="match-content">brownfield-site:BLR32</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">L&#39;Ancresse Hayne Road BR3 4HY</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR33" data-filter="match-content">BLR33</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR33" data-filter="match-content">brownfield-site:BLR33</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">3 Beckenham Road BR3 4ES</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR34" data-filter="match-content">BLR34</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR34" data-filter="match-content">brownfield-site:BLR34</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Elms Westbury Road BR3 4DD</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR35" data-filter="match-content">BLR35</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR35" data-filter="match-content">brownfield-site:BLR35</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Adj To 22 Southend Road BR3 1SD</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR36" data-filter="match-content">BLR36</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR36" data-filter="match-content">brownfield-site:BLR36</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sandford Close 72 The Avenue BR3 5ES</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR37" data-filter="match-content">BLR37</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR37" data-filter="match-content">brownfield-site:BLR37</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Beechers Court High Street BR3 1AQ</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR38" data-filter="match-content">BLR38</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR38" data-filter="match-content">brownfield-site:BLR38</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">87a Bromley Road BR2 0AA</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR39" data-filter="match-content">BLR39</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR39" data-filter="match-content">brownfield-site:BLR39</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">28 Park Hill Road BR2 0LF</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR40" data-filter="match-content">BLR40</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR40" data-filter="match-content">brownfield-site:BLR40</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Beck House 36a Copers Cope Road BR3 1NH</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR41" data-filter="match-content">BLR41</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR41" data-filter="match-content">brownfield-site:BLR41</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Conifer House Southend Road BR3 1SL</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR42" data-filter="match-content">BLR42</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR42" data-filter="match-content">brownfield-site:BLR42</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land At Former Grays Farm Production Village Grays Farm Road BR5 3AD</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR43" data-filter="match-content">BLR43</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR43" data-filter="match-content">brownfield-site:BLR43</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">122 Anerley Road SE20 8DL</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR44" data-filter="match-content">BLR44</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR44" data-filter="match-content">brownfield-site:BLR44</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">69-71 Church Road SE19 2TA</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR45" data-filter="match-content">BLR45</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR45" data-filter="match-content">brownfield-site:BLR45</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">130 Croydon Road SE20 7YZ-</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR46" data-filter="match-content">BLR46</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR46" data-filter="match-content">brownfield-site:BLR46</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Crystal Palace Park Crystal Palace Park Road Thicket Road Crystal Palace Parade Anerley Hill SE20 8DT</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR47" data-filter="match-content">BLR47</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR47" data-filter="match-content">brownfield-site:BLR47</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Warren Farm Berrys Green Road TN16 3AJ</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR48" data-filter="match-content">BLR48</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR48" data-filter="match-content">brownfield-site:BLR48</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">39 Oregon Square BR6 8NH</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR49" data-filter="match-content">BLR49</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR49" data-filter="match-content">brownfield-site:BLR49</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lubbock House 1 Northolme Rise BR6 9RF</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR50" data-filter="match-content">BLR50</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR50" data-filter="match-content">brownfield-site:BLR50</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">All Saints Catholic School Layhams Road West Wickham BR4 9HN</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR51" data-filter="match-content">BLR51</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR51" data-filter="match-content">brownfield-site:BLR51</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Eden Parade Eden Road BR3 4AU</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR52" data-filter="match-content">BLR52</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR52" data-filter="match-content">brownfield-site:BLR52</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Jacanda Lodge North Drive BR3 3XQ</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR53" data-filter="match-content">BLR53</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR53" data-filter="match-content">brownfield-site:BLR53</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">First Floor 155-159 High Street Orpington BR6 0LN</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR54" data-filter="match-content">BLR54</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR54" data-filter="match-content">brownfield-site:BLR54</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Heatherwood 33 Station Road BR6 0RZ</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR55" data-filter="match-content">BLR55</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR55" data-filter="match-content">brownfield-site:BLR55</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">First Floor 50-52 The Walnuts BR6 0TW</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR56" data-filter="match-content">BLR56</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR56" data-filter="match-content">brownfield-site:BLR56</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">19 Howard Road SE20 8HQ</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR57" data-filter="match-content">BLR57</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR57" data-filter="match-content">brownfield-site:BLR57</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">112 Beckenham Road BR3 4RH</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR58" data-filter="match-content">BLR58</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR58" data-filter="match-content">brownfield-site:BLR58</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hollywood East 1 Station Road SE20 7BE</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR59" data-filter="match-content">BLR59</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR59" data-filter="match-content">brownfield-site:BLR59</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">2 Crampton Road SE20 7AT</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR60" data-filter="match-content">BLR60</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR60" data-filter="match-content">brownfield-site:BLR60</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">8 Rodway Road BR1 3JL</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BLR61" data-filter="match-content">BLR61</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BLR61" data-filter="match-content">brownfield-site:BLR61</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">87 Oak Tree Gardens BR1 5BE</p>
@@ -559,8 +752,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -649,6 +842,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>

@@ -12,7 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
 <script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
@@ -119,194 +119,282 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
                 <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">26</span> records.</p>
                 <p class="govuk-visually-hidden">There are
                     <span class="js-accessible-list-count">26</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
-  <tbody><tr data-filter="item">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-01" data-filter="match-content">BR-LBTH-01</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-01" data-filter="match-content">brownfield-site:BR_LBTH_01</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bishopsgate Goods Yard</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-02" data-filter="match-content">BR-LBTH-02</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-02" data-filter="match-content">brownfield-site:BR_LBTH_02</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Marian Place Gas Works and The Oval</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-03" data-filter="match-content">BR-LBTH-03</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-03" data-filter="match-content">brownfield-site:BR_LBTH_03</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Whitechapel South</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-04" data-filter="match-content">BR-LBTH-04</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-04" data-filter="match-content">brownfield-site:BR_LBTH_04</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bow Common Gas Works</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-05" data-filter="match-content">BR-LBTH-05</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-05" data-filter="match-content">brownfield-site:BR_LBTH_05</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Chrisp Street Town Centre</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-06" data-filter="match-content">BR-LBTH-06</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-06" data-filter="match-content">brownfield-site:BR_LBTH_06</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Ailsa Street</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-07" data-filter="match-content">BR-LBTH-07</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-07" data-filter="match-content">brownfield-site:BR_LBTH_07</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Leven Road Gas Works</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-08" data-filter="match-content">BR-LBTH-08</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-08" data-filter="match-content">brownfield-site:BR_LBTH_08</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Aspen Way</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-09" data-filter="match-content">BR-LBTH-09</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-09" data-filter="match-content">brownfield-site:BR_LBTH_09</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Crossharbour Town Centre</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-10" data-filter="match-content">BR-LBTH-10</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-10" data-filter="match-content">brownfield-site:BR_LBTH_10</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Limeharbour</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-11" data-filter="match-content">BR-LBTH-11</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-11" data-filter="match-content">brownfield-site:BR_LBTH_11</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Marsh Wall East</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-12" data-filter="match-content">BR-LBTH-12</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-12" data-filter="match-content">brownfield-site:BR_LBTH_12</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Marsh Wall West</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-13" data-filter="match-content">BR-LBTH-13</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-13" data-filter="match-content">brownfield-site:BR_LBTH_13</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Millharbour South</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-14" data-filter="match-content">BR-LBTH-14</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-14" data-filter="match-content">brownfield-site:BR_LBTH_14</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Millharbour</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-15" data-filter="match-content">BR-LBTH-15</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-15" data-filter="match-content">brownfield-site:BR_LBTH_15</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Reuters LTD</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-16" data-filter="match-content">BR-LBTH-16</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-16" data-filter="match-content">brownfield-site:BR_LBTH_16</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Westferry Printworks</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-17" data-filter="match-content">BR-LBTH-17</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-17" data-filter="match-content">brownfield-site:BR_LBTH_17</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">42-44 Thomas Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-18" data-filter="match-content">BR-LBTH-18</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-18" data-filter="match-content">brownfield-site:BR_LBTH_18</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Old petrol station Leamouth Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-19" data-filter="match-content">BR-LBTH-19</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-19" data-filter="match-content">brownfield-site:BR_LBTH_19</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hercules Wharf, Castle Wharf and Union Wharf Orchard Place</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-20" data-filter="match-content">BR-LBTH-20</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-20" data-filter="match-content">brownfield-site:BR_LBTH_20</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Fleet Street Hill</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-21" data-filter="match-content">BR-LBTH-21</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-21" data-filter="match-content">brownfield-site:BR_LBTH_21</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site At land adjacent railway viaduct Mantus Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-22" data-filter="match-content">BR-LBTH-22</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-22" data-filter="match-content">brownfield-site:BR_LBTH_22</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Glaucus Street/Violet Road</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-23" data-filter="match-content">BR-LBTH-23</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-23" data-filter="match-content">brownfield-site:BR_LBTH_23</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stroudley Walk Market Stroudley Walk</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-24" data-filter="match-content">BR-LBTH-24</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-24" data-filter="match-content">brownfield-site:BR_LBTH_24</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Whitechapel Station &amp; surrounding land/buildings</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-25" data-filter="match-content">BR-LBTH-25</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-25" data-filter="match-content">brownfield-site:BR_LBTH_25</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Boatmans House, 2 Selsdon Way, London, E14 9LA</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BR-LBTH-26" data-filter="match-content">BR-LBTH-26</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BR-LBTH-26" data-filter="match-content">brownfield-site:BR_LBTH_26</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">82 West India Dock Road incorporating land to east</p>
@@ -314,8 +402,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -404,6 +492,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>

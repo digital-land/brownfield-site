@@ -12,7 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
 <script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
@@ -119,572 +119,822 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
                 <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">80</span> records.</p>
                 <p class="govuk-visually-hidden">There are
                     <span class="js-accessible-list-count">80</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
-  <tbody><tr data-filter="item">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0001" data-filter="match-content">RBK0001</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0001" data-filter="match-content">brownfield-site:RBK0001</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">3 Brook Gardens, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0002" data-filter="match-content">RBK0002</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0002" data-filter="match-content">brownfield-site:RBK0002</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">46-50 Coombe Road, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0003" data-filter="match-content">RBK0003</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0003" data-filter="match-content">brownfield-site:RBK0003</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">8-12 Coombe Road, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0004" data-filter="match-content">RBK0004</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0004" data-filter="match-content">brownfield-site:RBK0004</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">2A Somerset Close, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0005" data-filter="match-content">RBK0005</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0005" data-filter="match-content">brownfield-site:RBK0005</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Zanta, Coombe Park, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0006" data-filter="match-content">RBK0006</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0006" data-filter="match-content">brownfield-site:RBK0006</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kincross, 13 Coombe Lane West, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0007" data-filter="match-content">RBK0007</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0007" data-filter="match-content">brownfield-site:RBK0007</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">35 Woodlands Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0008" data-filter="match-content">RBK0008</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0008" data-filter="match-content">brownfield-site:RBK0008</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Park Lodge Warren Park, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0009" data-filter="match-content">RBK0009</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0009" data-filter="match-content">brownfield-site:RBK0009</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">17-19 Grove Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0010" data-filter="match-content">RBK0010</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0010" data-filter="match-content">brownfield-site:RBK0010</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">180 Coombe Lane West, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0011" data-filter="match-content">RBK0011</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0011" data-filter="match-content">brownfield-site:RBK0011</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">88 Ditton Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0012" data-filter="match-content">RBK0012</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0012" data-filter="match-content">brownfield-site:RBK0012</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">124 Kingston Road, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0013" data-filter="match-content">RBK0013</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0013" data-filter="match-content">brownfield-site:RBK0013</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">2 Ladderstile Ride, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0014" data-filter="match-content">RBK0014</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0014" data-filter="match-content">brownfield-site:RBK0014</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coombe Wood Oaks, 3 Coombe Hill Glade, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0015" data-filter="match-content">RBK0015</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0015" data-filter="match-content">brownfield-site:RBK0015</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rear Of Balmain Lodge, Cranes Park Avenue, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0016" data-filter="match-content">RBK0016</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0016" data-filter="match-content">brownfield-site:RBK0016</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Faro, 7 Brook Gardens, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0017" data-filter="match-content">RBK0017</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0017" data-filter="match-content">brownfield-site:RBK0017</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">106 Ewell Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0018" data-filter="match-content">RBK0018</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0018" data-filter="match-content">brownfield-site:RBK0018</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Well House, George Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0019" data-filter="match-content">RBK0019</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0019" data-filter="match-content">brownfield-site:RBK0019</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Former Thornley Coombe Park, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0020" data-filter="match-content">RBK0020</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0020" data-filter="match-content">brownfield-site:RBK0020</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Car Park To The Rear Of James House, 72A Richmond Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0021" data-filter="match-content">RBK0021</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0021" data-filter="match-content">brownfield-site:RBK0021</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">43 Burghley Avenue, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0022" data-filter="match-content">RBK0022</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0022" data-filter="match-content">brownfield-site:RBK0022</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Park House, Park Terrace, Worcester Park</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0023" data-filter="match-content">RBK0023</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0023" data-filter="match-content">brownfield-site:RBK0023</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Warren Oaks Warren Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0024" data-filter="match-content">RBK0024</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0024" data-filter="match-content">brownfield-site:RBK0024</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Junipers, Coombe Hill Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0025" data-filter="match-content">RBK0025</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0025" data-filter="match-content">brownfield-site:RBK0025</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">37 Hook Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0026" data-filter="match-content">RBK0026</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0026" data-filter="match-content">brownfield-site:RBK0026</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">14-19 Sussex Place, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0027" data-filter="match-content">RBK0027</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0027" data-filter="match-content">brownfield-site:RBK0027</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">10 Coombe Ridings, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0028" data-filter="match-content">RBK0028</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0028" data-filter="match-content">brownfield-site:RBK0028</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kingstons House, 15 Coombe Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0029" data-filter="match-content">RBK0029</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0029" data-filter="match-content">brownfield-site:RBK0029</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Princess House, Horace Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0030" data-filter="match-content">RBK0030</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0030" data-filter="match-content">brownfield-site:RBK0030</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coombe Road Service Station, 71-73 Coombe Road, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0031" data-filter="match-content">RBK0031</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0031" data-filter="match-content">brownfield-site:RBK0031</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development Site At Former Post Office, Ashdown Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0032" data-filter="match-content">RBK0032</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0032" data-filter="match-content">brownfield-site:RBK0032</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">10 St Marks Hill, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0033" data-filter="match-content">RBK0033</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0033" data-filter="match-content">brownfield-site:RBK0033</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">15 Lime Grove, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0034" data-filter="match-content">RBK0034</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0034" data-filter="match-content">brownfield-site:RBK0034</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Unit B Magnum House, 164 London Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0035" data-filter="match-content">RBK0035</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0035" data-filter="match-content">brownfield-site:RBK0035</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Unit A Magnum House, 164 London Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0036" data-filter="match-content">RBK0036</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0036" data-filter="match-content">brownfield-site:RBK0036</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">18 Coombe Ridings, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0037" data-filter="match-content">RBK0037</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0037" data-filter="match-content">brownfield-site:RBK0037</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">160 Ewell Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0038" data-filter="match-content">RBK0038</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0038" data-filter="match-content">brownfield-site:RBK0038</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Work, Vale Road South, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0039" data-filter="match-content">RBK0039</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0039" data-filter="match-content">brownfield-site:RBK0039</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">143-151 Clarence Street, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0040" data-filter="match-content">RBK0040</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0040" data-filter="match-content">brownfield-site:RBK0040</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Former Dairy Crest Milk Depot, Lower Marsh Lane, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0041" data-filter="match-content">RBK0041</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0041" data-filter="match-content">brownfield-site:RBK0041</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">24 Cowleaze Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0042" data-filter="match-content">RBK0042</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0042" data-filter="match-content">brownfield-site:RBK0042</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Site At Eden Walk Shopping Centre, Eden Walk, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0043" data-filter="match-content">RBK0043</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0043" data-filter="match-content">brownfield-site:RBK0043</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development Land At 53A-53B, Kingston Hill, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0044" data-filter="match-content">RBK0044</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0044" data-filter="match-content">brownfield-site:RBK0044</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Former Oakhill Health Centre, 3 Oakhill, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0045" data-filter="match-content">RBK0045</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0045" data-filter="match-content">brownfield-site:RBK0045</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">12 Portsmouth Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0046" data-filter="match-content">RBK0046</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0046" data-filter="match-content">brownfield-site:RBK0046</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Plot B Culford, Coombe Park, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0047" data-filter="match-content">RBK0047</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0047" data-filter="match-content">brownfield-site:RBK0047</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Plot A Culford, Coombe Park, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0048" data-filter="match-content">RBK0048</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0048" data-filter="match-content">brownfield-site:RBK0048</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Park Works, 16 Park Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0049" data-filter="match-content">RBK0049</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0049" data-filter="match-content">brownfield-site:RBK0049</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Cap In Hand, 174 Hook Rise North, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0050" data-filter="match-content">RBK0050</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0050" data-filter="match-content">brownfield-site:RBK0050</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cotswood, Kingston Hill, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0051" data-filter="match-content">RBK0051</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0051" data-filter="match-content">brownfield-site:RBK0051</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">4 Vicarage Close, Worcester Park</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0052" data-filter="match-content">RBK0052</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0052" data-filter="match-content">brownfield-site:RBK0052</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">18-32 Beaufort Road And 23-43 Fassett Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0053" data-filter="match-content">RBK0053</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0053" data-filter="match-content">brownfield-site:RBK0053</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">122A Ewell Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0054" data-filter="match-content">RBK0054</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0054" data-filter="match-content">brownfield-site:RBK0054</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Culmpine, Beverley Lane, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0055" data-filter="match-content">RBK0055</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0055" data-filter="match-content">brownfield-site:RBK0055</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">126 Coombe Lane West, Kingston Upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0056" data-filter="match-content">RBK0056</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0056" data-filter="match-content">brownfield-site:RBK0056</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">374 Ewell Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0057" data-filter="match-content">RBK0057</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0057" data-filter="match-content">brownfield-site:RBK0057</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">10 Tolworth Broadway And 15 Burwood Close, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0058" data-filter="match-content">RBK0058</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0058" data-filter="match-content">brownfield-site:RBK0058</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">18 Nelson Road, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0059" data-filter="match-content">RBK0059</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0059" data-filter="match-content">brownfield-site:RBK0059</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hurston House, Stoke Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0060" data-filter="match-content">RBK0060</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0060" data-filter="match-content">brownfield-site:RBK0060</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Woodlands, Coombe Hill Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0061" data-filter="match-content">RBK0061</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0061" data-filter="match-content">brownfield-site:RBK0061</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land To The Rear Of 22-24 The Avenue, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0062" data-filter="match-content">RBK0062</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0062" data-filter="match-content">brownfield-site:RBK0062</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Former Richmond Park Tavern, 178 Kings Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0063" data-filter="match-content">RBK0063</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0063" data-filter="match-content">brownfield-site:RBK0063</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">20 Villiers Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0064" data-filter="match-content">RBK0064</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0064" data-filter="match-content">brownfield-site:RBK0064</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Park House, 87 Burlington Road, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0065" data-filter="match-content">RBK0065</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0065" data-filter="match-content">brownfield-site:RBK0065</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Kingsgate Business Centre, 12-50 Kingsgate Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0066" data-filter="match-content">RBK0066</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0066" data-filter="match-content">brownfield-site:RBK0066</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cocks Crescent, New Malden</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0067" data-filter="match-content">RBK0067</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0067" data-filter="match-content">brownfield-site:RBK0067</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P5 Cattle Market Car Park And Fairfield Bus Station, Fairfield North, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0068" data-filter="match-content">RBK0068</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0068" data-filter="match-content">brownfield-site:RBK0068</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tolworth Tower, Ewell Road, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0069" data-filter="match-content">RBK0069</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0069" data-filter="match-content">brownfield-site:RBK0069</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P12 Northern Riverfront, Vicarage Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0070" data-filter="match-content">RBK0070</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0070" data-filter="match-content">brownfield-site:RBK0070</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P3b Eden Quarter, East Of Eden Street And The Ashdown Road Sites, Kingston Upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0071" data-filter="match-content">RBK0071</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0071" data-filter="match-content">brownfield-site:RBK0071</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P19a And P19e Sites Adjoining Kingston College, Richmond Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0072" data-filter="match-content">RBK0072</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0072" data-filter="match-content">brownfield-site:RBK0072</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Former Government Offices, Hook Rise South, Surbiton</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0073" data-filter="match-content">RBK0073</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0073" data-filter="match-content">brownfield-site:RBK0073</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P3a Eden Quarter, East Of Eden Street And The Ashdown Road Sites, Kingston Upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0074" data-filter="match-content">RBK0074</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0074" data-filter="match-content">brownfield-site:RBK0074</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cambridge Road Estate, Cambridge Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0075" data-filter="match-content">RBK0075</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0075" data-filter="match-content">brownfield-site:RBK0075</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P10 Kingston Station, Wood Street, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0076" data-filter="match-content">RBK0076</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0076" data-filter="match-content">brownfield-site:RBK0076</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Surbiton Station Car Park, Glenbuck Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0077" data-filter="match-content">RBK0077</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0077" data-filter="match-content">brownfield-site:RBK0077</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P6 Kingfisher Leisure Centre, Fairfield Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0078" data-filter="match-content">RBK0078</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0078" data-filter="match-content">brownfield-site:RBK0078</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P1 Clarence Street North, Clarence Street, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0079" data-filter="match-content">RBK0079</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0079" data-filter="match-content">brownfield-site:RBK0079</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P20 Canbury Place Car Park And 13-43 Richmond Road, Kingston upon Thames</p>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./RBK0080" data-filter="match-content">RBK0080</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./RBK0080" data-filter="match-content">brownfield-site:RBK0080</a>
+    </h4>
   </td>
   <td>
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">P4 St James Area, Eden Street, Kingston upon Thames</p>
@@ -692,8 +942,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -782,6 +1032,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>
