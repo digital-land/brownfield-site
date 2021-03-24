@@ -139,6 +139,12 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:SOU6c            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/EAL" class="govuk-link">London Borough of Ealing</a>
+<span title="Organisation identifier: local-authority-eng:EAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EAL)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                SOU6c Southall East - Middlesex Business Centre            </dd>
@@ -147,32 +153,16 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                SOU6c            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/EAL" class="govuk-link">London Borough of Ealing</a>
-<span title="Organisation identifier: local-authority-eng:EAL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EAL)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-12-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +180,48 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>name</th>
+                <th>reference</th>
+                <th>geography</th>
+                <th>geometry</th>
+                <th>organisation</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-12-22</td>
+                <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L2407">636ac78dd9a1...</a></td>
+                <td>2406</td>
+                    <td>SOU6c Southall East - Middlesex Business Centre</td> 
+                    <td>SOU6c</td> 
+                    <td>brownfield-site:SOU6c</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.374490 51.506060,-0.373322 51.506083,-0.372209 51.506046,-0.372141 51.505444,-0.371803 51.505450,-0.371761 51.505105,-0.371577 51.505036,-0.371651 51.504942,-0.372243 51.505101,-0.372257 51.504951,-0.372374 51.504908,-0.372430 51.504358,-0.373097 51.504373,-0.373128 51.503762,-0.375109 51.503917,-0.375063 51.504478,-0.375143 51.504490,-0.375132 51.504529,-0.375577 51.504546,-0.375576 51.504591,-0.375637 51.504631,-0.375974 51.504657,-0.375954 51.504718,-0.375625 51.504692,-0.375561 51.504735,-0.375527 51.505196,-0.375794 51.505200,-0.375730 51.505271,-0.375754 51.505344,-0.375903 51.505418,-0.376009 51.505431,-0.375999 51.505459,-0.375411 51.505467,-0.375340 51.505449,-0.375342 51.505388,-0.374755 51.505352,-0.374744 51.505430,-0.374691 51.505424,-0.374656 51.505651,-0.374549 51.505644,-0.374490 51.506060)))
+  </div>
+</details>
+                    </td>
+                    <td>local-authority-eng:EAL</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +314,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>

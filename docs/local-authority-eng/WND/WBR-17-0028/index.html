@@ -139,13 +139,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:WBR/17/0028            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                B and Q Depot Smugglers Way            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                WBR/17/0028            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                B and Q Depot Smugglers Way            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -153,26 +153,16 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:WND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WND)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-12-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>    
     </dl></article>
 </div>
             
 </div>
+
+<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -190,7 +180,48 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div>        </main>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>name</th>
+                <th>reference</th>
+                <th>geography</th>
+                <th>geometry</th>
+                <th>organisation</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-12-22</td>
+                <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L2207">636ac78dd9a1...</a></td>
+                <td>2206</td>
+                    <td>B and Q Depot Smugglers Way</td> 
+                    <td>WBR/17/0028</td> 
+                    <td>brownfield-site:WBR/17/0028</td> 
+                    <td class="data-table__notes-cell data-table__cell--min-width-4">
+                        <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.190506 51.461398,-0.190491 51.461375,-0.190663 51.461245,-0.190820 51.461062,-0.190961 51.460771,-0.191357 51.460743,-0.191400 51.460792,-0.191385 51.460811,-0.191625 51.461033,-0.192006 51.461495,-0.191941 51.461560,-0.190545 51.462005,-0.190478 51.461959,-0.190470 51.462000,-0.190500 51.462019,-0.190427 51.462044,-0.190311 51.462010,-0.190341 51.462051,-0.190320 51.462078,-0.189548 51.462325,-0.189178 51.461871,-0.189149 51.461766,-0.189950 51.461619,-0.189977 51.461652,-0.190072 51.461622,-0.190045 51.461589,-0.190506 51.461398)))
+  </div>
+</details>
+                    </td>
+                    <td>local-authority-eng:WND</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -283,6 +314,13 @@ crossorigin="" />
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
+    })
 </script>
   </body>
 </html>
