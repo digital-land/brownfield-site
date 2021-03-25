@@ -132,20 +132,39 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">brownfield-site</span>
     <h1 class="govuk-heading-xl">Excalibur Estate, Baudwin Road</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/LEW/WF001</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Excalibur Estate, Baudwin Road            </dd>
+            <dd class="govuk-summary-list__value">                brownfield-site:WF001            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                WF001            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                brownfield-site:WF001            </dd>
+            <dd class="govuk-summary-list__value">                Excalibur Estate, Baudwin Road            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -162,7 +181,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -180,32 +201,34 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>reference</th>
-                <th>geography</th>
-                <th>geometry</th>
-                <th>organisation</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-12-22</td>
-                <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L2431">636ac78dd9a1...</a></td>
-                <td>2430</td>
-                    <td>Excalibur Estate, Baudwin Road</td> 
-                    <td>WF001</td> 
-                    <td>brownfield-site:WF001</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>organisation</th>
+            <th>reference</th>
+            <th>geography</th>
+            <th>geometry</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L2431">636ac78dd9a1...</a></td>
+            <td>2430</td>
+                <td>local-authority-eng:LEW</td> 
+                <td>WF001</td> 
+                <td>brownfield-site:WF001</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -215,12 +238,14 @@ crossorigin="" />
     MULTIPOLYGON (((-0.003703 51.435739,-0.001115 51.436215,0.000652 51.436383,0.000548 51.436596,0.000527 51.436731,0.000623 51.436770,0.000651 51.436614,0.000693 51.436603,0.000738 51.436411,0.000863 51.436269,0.001180 51.435706,0.001235 51.435683,0.001549 51.435750,0.001811 51.435278,0.001483 51.435207,0.001627 51.434956,0.001613 51.434915,0.000618 51.434665,0.000745 51.434473,-0.000534 51.434171,-0.000396 51.433956,-0.000449 51.433945,-0.000661 51.434290,-0.000662 51.434370,-0.001100 51.434375,-0.001097 51.434238,-0.000854 51.434235,-0.000829 51.434208,-0.000851 51.434096,-0.001675 51.433915,-0.002090 51.434381,-0.001853 51.434378,-0.001841 51.434597,-0.002302 51.434599,-0.002904 51.435276,-0.003003 51.435323,-0.003259 51.435273,-0.003423 51.435400,-0.003703 51.435739)))
   </div>
 </details>
-                    </td>
-                    <td>local-authority-eng:LEW</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>Excalibur Estate, Baudwin Road</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -322,5 +347,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

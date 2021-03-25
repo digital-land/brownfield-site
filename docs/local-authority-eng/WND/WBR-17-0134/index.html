@@ -132,9 +132,36 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">brownfield-site</span>
     <h1 class="govuk-heading-xl">Units 11-13 &amp; 24-25 Blades Court 121 Deodar Road</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/WND/WBR-17-0134</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Units 11-13 &amp; 24-25 Blades Court 121 Deodar Road            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">reference
+            </dt>
+            <dd class="govuk-summary-list__value">                WBR/17/0134            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:WBR/17/0134            </dd>
@@ -145,14 +172,6 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:WND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WND)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Units 11-13 &amp; 24-25 Blades Court 121 Deodar Road            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                WBR/17/0134            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-12-22            </dd>
@@ -162,7 +181,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -180,32 +201,34 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>reference</th>
-                <th>geography</th>
-                <th>geometry</th>
-                <th>organisation</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-12-22</td>
-                <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L478">636ac78dd9a1...</a></td>
-                <td>477</td>
-                    <td>Units 11-13 &amp; 24-25 Blades Court 121 Deodar Road</td> 
-                    <td>WBR/17/0134</td> 
-                    <td>brownfield-site:WBR/17/0134</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>organisation</th>
+            <th>reference</th>
+            <th>geography</th>
+            <th>geometry</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L478">636ac78dd9a1...</a></td>
+            <td>477</td>
+                <td>local-authority-eng:WND</td> 
+                <td>WBR/17/0134</td> 
+                <td>brownfield-site:WBR/17/0134</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -215,12 +238,14 @@ crossorigin="" />
     MULTIPOLYGON (((-0.207920 51.463072,-0.207987 51.462947,-0.208124 51.462968,-0.208043 51.463141,-0.207903 51.463119,-0.207920 51.463072)),((-0.207456 51.463059,-0.207472 51.463017,-0.207614 51.463036,-0.207578 51.463127,-0.207437 51.463109,-0.207456 51.463059)))
   </div>
 </details>
-                    </td>
-                    <td>local-authority-eng:WND</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>Units 11-13 &amp; 24-25 Blades Court 121 Deodar Road</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -322,5 +347,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

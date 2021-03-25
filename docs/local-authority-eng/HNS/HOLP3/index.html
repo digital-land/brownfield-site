@@ -132,15 +132,28 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">brownfield-site</span>
     <h1 class="govuk-heading-xl">Empire House,408-430, Chiswick High Road,Chiswick,W4 5TF</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/HNS/HOLP3</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HNS" class="govuk-link">London Borough of Hounslow</a>
-<span title="Organisation identifier: local-authority-eng:HNS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HNS)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Empire House,408-430, Chiswick High Road,Chiswick,W4 5TF            </dd>
@@ -153,6 +166,12 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:HOLP3            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HNS" class="govuk-link">London Borough of Hounslow</a>
+<span title="Organisation identifier: local-authority-eng:HNS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HNS)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-12-22            </dd>
@@ -162,7 +181,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -180,32 +201,34 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>reference</th>
-                <th>geography</th>
-                <th>geometry</th>
-                <th>organisation</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-12-22</td>
-                <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L1866">636ac78dd9a1...</a></td>
-                <td>1865</td>
-                    <td>Empire House,408-430, Chiswick High Road,Chiswick,W4 5TF</td> 
-                    <td>HOLP3</td> 
-                    <td>brownfield-site:HOLP3</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>organisation</th>
+            <th>reference</th>
+            <th>geography</th>
+            <th>geometry</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L1866">636ac78dd9a1...</a></td>
+            <td>1865</td>
+                <td>local-authority-eng:HNS</td> 
+                <td>HOLP3</td> 
+                <td>brownfield-site:HOLP3</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -215,12 +238,14 @@ crossorigin="" />
     MULTIPOLYGON (((-0.267196 51.493429,-0.266996 51.493492,-0.266882 51.493422,-0.266667 51.493454,-0.266592 51.493407,-0.266404 51.493425,-0.266178 51.493288,-0.265862 51.493324,-0.265627 51.493307,-0.265646 51.493181,-0.265532 51.493176,-0.265559 51.492974,-0.265742 51.492976,-0.265747 51.492674,-0.266544 51.492723,-0.266541 51.492935,-0.266409 51.492972,-0.266434 51.493004,-0.266259 51.493038,-0.266694 51.493296,-0.266784 51.493303,-0.267020 51.493226,-0.267196 51.493429)))
   </div>
 </details>
-                    </td>
-                    <td>local-authority-eng:HNS</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>Empire House,408-430, Chiswick High Road,Chiswick,W4 5TF</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -322,5 +347,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

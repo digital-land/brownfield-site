@@ -132,9 +132,32 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">brownfield-site</span>
     <h1 class="govuk-heading-xl">181-187 King Street, Town Hall Frontage &amp; Land West of Nigel Playfair Avenue</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/HMF/LBHF009</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                181-187 King Street, Town Hall Frontage &amp; Land West of Nigel Playfair Avenue            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HMF" class="govuk-link">London Borough of Hammersmith &amp; Fulham</a>
@@ -144,10 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                LBHF009            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                181-187 King Street, Town Hall Frontage &amp; Land West of Nigel Playfair Avenue            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -162,7 +181,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/geography/">View the schema for geography</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -180,32 +201,34 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>name</th>
-                <th>reference</th>
-                <th>geography</th>
-                <th>geometry</th>
-                <th>organisation</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2020-12-22</td>
-                <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L2210">636ac78dd9a1...</a></td>
-                <td>2209</td>
-                    <td>181-187 King Street, Town Hall Frontage &amp; Land West of Nigel Playfair Avenue</td> 
-                    <td>LBHF009</td> 
-                    <td>brownfield-site:LBHF009</td> 
-                    <td class="data-table__notes-cell data-table__cell--min-width-4">
-                        <details class="govuk-details">
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>organisation</th>
+            <th>reference</th>
+            <th>geography</th>
+            <th>geometry</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2020-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L2210">636ac78dd9a1...</a></td>
+            <td>2209</td>
+                <td>local-authority-eng:HMF</td> 
+                <td>LBHF009</td> 
+                <td>brownfield-site:LBHF009</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
       See WKT
@@ -215,12 +238,14 @@ crossorigin="" />
     MULTIPOLYGON (((-0.233821 51.492208,-0.234288 51.492242,-0.234448 51.491492,-0.234427 51.491490,-0.234443 51.491424,-0.234408 51.491421,-0.234428 51.491343,-0.235403 51.491427,-0.235355 51.491676,-0.235165 51.491680,-0.235245 51.491764,-0.235215 51.491775,-0.235006 51.491784,-0.234993 51.492146,-0.234895 51.492719,-0.234801 51.492712,-0.234782 51.492771,-0.235215 51.492802,-0.235202 51.492980,-0.233963 51.492878,-0.233098 51.492761,-0.233177 51.492389,-0.233093 51.492381,-0.233103 51.492333,-0.233274 51.492347,-0.233290 51.492276,-0.233443 51.492289,-0.233472 51.492166,-0.233821 51.492208)))
   </div>
 </details>
-                    </td>
-                    <td>local-authority-eng:HMF</td> 
-            </tr>        </tbody>
-    </table>
+                </td>
+                <td>181-187 King Street, Town Hall Frontage &amp; Land West of Nigel Playfair Avenue</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -322,5 +347,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>
