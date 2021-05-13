@@ -145,7 +145,12 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
-            </li></ul>
+            </li><li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
+                Referenced by (0)
+                </a>
+            </li>
+        </ul>
     </nav>
 
 <div id="record">
@@ -156,6 +161,12 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:BLR018            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LBH" class="govuk-link">London Borough of Lambeth</a>
+<span title="Organisation identifier: local-authority-eng:LBH" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LBH)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                260 Knight&#39;s Hill            </dd>
@@ -163,12 +174,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                BLR018            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LBH" class="govuk-link">London Borough of Lambeth</a>
-<span title="Organisation identifier: local-authority-eng:LBH" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LBH)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -178,11 +183,6 @@ crossorigin="" />
 </div>
             
 </div>
-
-<h3 class="govuk-heading-m">Associated information</h3>
-
-<ul class="govuk-list govuk-list--bullet">
-    <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -198,9 +198,15 @@ crossorigin="" />
 </div>
 
 
-    <div class="govuk-!-margin-top-2">
+    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div></div>
+    </div>
+<h3 class="govuk-heading-m">Associated information</h3>
+
+<ul class="govuk-list govuk-list--bullet">
+    <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
+
+</div>
 
 <div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
@@ -212,18 +218,18 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>organisation</th>
-            <th>geometry</th>
-            <th>geography</th>
             <th>reference</th>
+            <th>geometry</th>
+            <th>organisation</th>
             <th>name</th>
+            <th>geography</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L1155">636ac78dd9a1...</a></td>
             <td>1154</td>
-                <td>local-authority-eng:LBH</td> 
+                <td>BLR018</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -236,16 +242,24 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>brownfield-site:BLR018</td> 
-                <td>BLR018</td> 
+                <td>local-authority-eng:LBH</td> 
                 <td>260 Knight&#39;s Hill</td> 
+                <td>brownfield-site:BLR018</td> 
         </tr>    </tbody>
 </table>
 
     </div>
     <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-</div>        </main>
+</div><div id="referenced-by">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m dlf-subnav__heading">Referenced by</h2>
+            <p class="govuk-body">This record is referenced by 0 other planning related data records.</p>
+</div>
+    </div>
+</div>
+        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
