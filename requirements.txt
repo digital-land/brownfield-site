@@ -1,1 +1,2 @@
 -e git+https://github.com/digital-land/digital-land-python.git#egg=digital-land
+Jinja2==2.11.3
