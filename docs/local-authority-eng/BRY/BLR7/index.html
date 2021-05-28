@@ -161,13 +161,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:BLR7            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                West of Bromley High Street and Land at Bromley South BR1/BR2            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                BLR7            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                West of Bromley High Street and Land at Bromley South BR1/BR2            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -218,9 +218,9 @@ crossorigin="" />
             <th>line</th>
             <th>geography</th>
             <th>organisation</th>
+            <th>geometry</th>
             <th>reference</th>
             <th>name</th>
-            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -229,8 +229,6 @@ crossorigin="" />
             <td>2389</td>
                 <td>brownfield-site:BLR7</td> 
                 <td>local-authority-eng:BRY</td> 
-                <td>BLR7</td> 
-                <td>West of Bromley High Street and Land at Bromley South BR1/BR2</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>BLR7</td> 
+                <td>West of Bromley High Street and Land at Bromley South BR1/BR2</td> 
         </tr>    </tbody>
 </table>
 
@@ -357,7 +357,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

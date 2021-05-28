@@ -217,10 +217,10 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>geography</th>
-            <th>reference</th>
             <th>organisation</th>
-            <th>name</th>
             <th>geometry</th>
+            <th>reference</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -228,9 +228,7 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L994">636ac78dd9a1...</a></td>
             <td>993</td>
                 <td>brownfield-site:71923/APP/2016/3622</td> 
-                <td>71923/APP/2016/3622</td> 
                 <td>local-authority-eng:HIL</td> 
-                <td>Tavistock House, 5 Rockingham Road, Uxbridge, UB8 2UB</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>71923/APP/2016/3622</td> 
+                <td>Tavistock House, 5 Rockingham Road, Uxbridge, UB8 2UB</td> 
         </tr>    </tbody>
 </table>
 
@@ -357,7 +357,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

@@ -157,9 +157,11 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/WSM/14-10572-FULL</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                Grove House 88 - 94 Westbourne Grove, London, W2 5RT            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WSM" class="govuk-link">City of Westminster</a>
+<span title="Organisation identifier: local-authority-eng:WSM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WSM)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -169,11 +171,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                14/10572/FULL            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WSM" class="govuk-link">City of Westminster</a>
-<span title="Organisation identifier: local-authority-eng:WSM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WSM)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                Grove House 88 - 94 Westbourne Grove, London, W2 5RT            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -218,9 +218,9 @@ crossorigin="" />
             <th>line</th>
             <th>geography</th>
             <th>organisation</th>
+            <th>geometry</th>
             <th>reference</th>
             <th>name</th>
-            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -229,8 +229,6 @@ crossorigin="" />
             <td>449</td>
                 <td>brownfield-site:14/10572/FULL</td> 
                 <td>local-authority-eng:WSM</td> 
-                <td>14/10572/FULL</td> 
-                <td>Grove House 88 - 94 Westbourne Grove, London, W2 5RT</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>14/10572/FULL</td> 
+                <td>Grove House 88 - 94 Westbourne Grove, London, W2 5RT</td> 
         </tr>    </tbody>
 </table>
 
@@ -357,7 +357,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

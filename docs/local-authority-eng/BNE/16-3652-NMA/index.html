@@ -218,9 +218,9 @@ crossorigin="" />
             <th>line</th>
             <th>geography</th>
             <th>organisation</th>
+            <th>geometry</th>
             <th>reference</th>
             <th>name</th>
-            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -229,8 +229,6 @@ crossorigin="" />
             <td>1835</td>
                 <td>brownfield-site:16/3652/NMA</td> 
                 <td>local-authority-eng:BNE</td> 
-                <td>16/3652/NMA</td> 
-                <td>C7-C8A Beaufort Park, Land At Former RAF East Camp, Aerodrome Road/ Grahame Parkway, Hendon, London, NW9</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>16/3652/NMA</td> 
+                <td>C7-C8A Beaufort Park, Land At Former RAF East Camp, Aerodrome Road/ Grahame Parkway, Hendon, London, NW9</td> 
         </tr>    </tbody>
 </table>
 
@@ -357,7 +357,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

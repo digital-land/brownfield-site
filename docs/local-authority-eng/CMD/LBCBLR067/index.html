@@ -161,10 +161,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:LBCBLR067            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Land at Kiln Place (Blocks 1-64 65-80 81-96 97-104 105-116 117-164; entrance ways into 81-96; land between 81-96 and 117-164; land between Kiln Place and Meru Close; land to east of Kiln Place and playground between blocks 65-80 and 81-96) London            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                LBCBLR067            </dd>
@@ -174,6 +170,10 @@ crossorigin="" />
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CMD" class="govuk-link">London Borough of Camden</a>
 <span title="Organisation identifier: local-authority-eng:CMD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CMD)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Land at Kiln Place (Blocks 1-64 65-80 81-96 97-104 105-116 117-164; entrance ways into 81-96; land between 81-96 and 117-164; land between Kiln Place and Meru Close; land to east of Kiln Place and playground between blocks 65-80 and 81-96) London            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -218,9 +218,9 @@ crossorigin="" />
             <th>line</th>
             <th>geography</th>
             <th>organisation</th>
+            <th>geometry</th>
             <th>reference</th>
             <th>name</th>
-            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -229,8 +229,6 @@ crossorigin="" />
             <td>1590</td>
                 <td>brownfield-site:LBCBLR067</td> 
                 <td>local-authority-eng:CMD</td> 
-                <td>LBCBLR067</td> 
-                <td>Land at Kiln Place (Blocks 1-64 65-80 81-96 97-104 105-116 117-164; entrance ways into 81-96; land between 81-96 and 117-164; land between Kiln Place and Meru Close; land to east of Kiln Place and playground between blocks 65-80 and 81-96) London</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>LBCBLR067</td> 
+                <td>Land at Kiln Place (Blocks 1-64 65-80 81-96 97-104 105-116 117-164; entrance ways into 81-96; land between 81-96 and 117-164; land between Kiln Place and Meru Close; land to east of Kiln Place and playground between blocks 65-80 and 81-96) London</td> 
         </tr>    </tbody>
 </table>
 
@@ -357,7 +357,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

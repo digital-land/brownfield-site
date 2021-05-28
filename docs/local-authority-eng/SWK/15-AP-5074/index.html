@@ -157,6 +157,12 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/SWK/15-AP-5074</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SWK" class="govuk-link">London Borough of Southwark</a>
+<span title="Organisation identifier: local-authority-eng:SWK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SWK)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                15-AP-5074            </dd>
@@ -164,12 +170,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:15-AP-5074            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SWK" class="govuk-link">London Borough of Southwark</a>
-<span title="Organisation identifier: local-authority-eng:SWK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SWK)</span>
-            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -218,9 +218,9 @@ crossorigin="" />
             <th>line</th>
             <th>geography</th>
             <th>organisation</th>
+            <th>geometry</th>
             <th>reference</th>
             <th>name</th>
-            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -229,8 +229,6 @@ crossorigin="" />
             <td>538</td>
                 <td>brownfield-site:15-AP-5074</td> 
                 <td>local-authority-eng:SWK</td> 
-                <td>15-AP-5074</td> 
-                <td>62-64 Nunhead Lane SE15 3QE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>15-AP-5074</td> 
+                <td>62-64 Nunhead Lane SE15 3QE</td> 
         </tr>    </tbody>
 </table>
 
@@ -357,7 +357,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map

@@ -163,17 +163,17 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:CON" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CON)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">reference
             </dt>
-            <dd class="govuk-summary-list__value">                18 Lemon Street Truro Cornwall TR1 2LS            </dd>
+            <dd class="govuk-summary-list__value">                BR67            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:BR67            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                BR67            </dd>
+            <dd class="govuk-summary-list__value">                18 Lemon Street Truro Cornwall TR1 2LS            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -217,10 +217,10 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>geography</th>
-            <th>reference</th>
             <th>organisation</th>
-            <th>name</th>
             <th>geometry</th>
+            <th>reference</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -228,9 +228,7 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/33952e2bd8be77b429805ad4ea76d165c86a9dce678ac5af85fc6b7ab33b338e.csv#L37">33952e2bd8be...</a></td>
             <td>36</td>
                 <td>brownfield-site:BR67</td> 
-                <td>BR67</td> 
                 <td>local-authority-eng:CON</td> 
-                <td>18 Lemon Street Truro Cornwall TR1 2LS</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -243,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>BR67</td> 
+                <td>18 Lemon Street Truro Cornwall TR1 2LS</td> 
         </tr>    </tbody>
 </table>
 
@@ -357,7 +357,7 @@ crossorigin="" />
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map
