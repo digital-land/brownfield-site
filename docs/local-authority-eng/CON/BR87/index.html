@@ -165,15 +165,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Land North Of Tolcarne Mews Tregoss Road Newquay Cornwall TR7 2NR            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">reference
+            </dt>
+            <dd class="govuk-summary-list__value">                BR87            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CON" class="govuk-link">Cornwall Council</a>
 <span title="Organisation identifier: local-authority-eng:CON" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CON)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                BR87            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -216,17 +216,20 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
-            <th>organisation</th>
-            <th>reference</th>
-            <th>geography</th>
             <th>name</th>
+            <th>reference</th>
+            <th>organisation</th>
+            <th>geometry</th>
+            <th>geography</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-06</td>
             <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/33952e2bd8be77b429805ad4ea76d165c86a9dce678ac5af85fc6b7ab33b338e.csv#L43">33952e2bd8be...</a></td>
             <td>42</td>
+                <td>Land North Of Tolcarne Mews Tregoss Road Newquay Cornwall TR7 2NR</td> 
+                <td>BR87</td> 
+                <td>local-authority-eng:CON</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -239,10 +242,7 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>local-authority-eng:CON</td> 
-                <td>BR87</td> 
                 <td>brownfield-site:BR87</td> 
-                <td>Land North Of Tolcarne Mews Tregoss Road Newquay Cornwall TR7 2NR</td> 
         </tr>    </tbody>
 </table>
 
@@ -352,7 +352,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
