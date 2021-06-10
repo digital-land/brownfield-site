@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,10 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/HRY/HGY-2013-2511</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                6-8 Brownlow Road London N11 2DE            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
             <dd class="govuk-summary-list__value">                HGY/2013/2511            </dd>
@@ -174,6 +173,10 @@ crossorigin="" />
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HRY" class="govuk-link">London Borough of Haringey</a>
 <span title="Organisation identifier: local-authority-eng:HRY" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HRY)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                6-8 Brownlow Road London N11 2DE            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -216,17 +219,20 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
-            <th>geometry</th>
-            <th>geography</th>
             <th>reference</th>
             <th>organisation</th>
+            <th>geography</th>
+            <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L655">636ac78dd9a1...</a></td>
             <td>654</td>
+                <td>HGY/2013/2511</td> 
+                <td>local-authority-eng:HRY</td> 
+                <td>brownfield-site:HGY/2013/2511</td> 
                 <td>6-8 Brownlow Road London N11 2DE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -240,9 +246,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>brownfield-site:HGY/2013/2511</td> 
-                <td>HGY/2013/2511</td> 
-                <td>local-authority-eng:HRY</td> 
         </tr>    </tbody>
 </table>
 

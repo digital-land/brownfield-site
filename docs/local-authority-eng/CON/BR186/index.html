@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,11 +160,9 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/CON/BR186</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CON" class="govuk-link">Cornwall Council</a>
-<span title="Organisation identifier: local-authority-eng:CON" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CON)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                Garages Grannys Lane Perranporth TR6 0HB            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">reference
             </dt>
@@ -171,9 +172,11 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:BR186            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                Garages Grannys Lane Perranporth TR6 0HB            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CON" class="govuk-link">Cornwall Council</a>
+<span title="Organisation identifier: local-authority-eng:CON" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CON)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -216,17 +219,20 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
-            <th>geometry</th>
-            <th>geography</th>
             <th>reference</th>
             <th>organisation</th>
+            <th>geography</th>
+            <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-06</td>
             <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/33952e2bd8be77b429805ad4ea76d165c86a9dce678ac5af85fc6b7ab33b338e.csv#L124">33952e2bd8be...</a></td>
             <td>123</td>
+                <td>BR186</td> 
+                <td>local-authority-eng:CON</td> 
+                <td>brownfield-site:BR186</td> 
                 <td>Garages Grannys Lane Perranporth TR6 0HB</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -240,9 +246,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>brownfield-site:BR186</td> 
-                <td>BR186</td> 
-                <td>local-authority-eng:CON</td> 
         </tr>    </tbody>
 </table>
 

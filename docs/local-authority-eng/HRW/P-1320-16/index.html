@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,6 +160,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/HRW/P-1320-16</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">reference
+            </dt>
+            <dd class="govuk-summary-list__value">                P/1320/16            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:P/1320/16            </dd>
@@ -166,10 +173,6 @@ crossorigin="" />
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HRW" class="govuk-link">London Borough of Harrow</a>
 <span title="Organisation identifier: local-authority-eng:HRW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HRW)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                P/1320/16            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -216,17 +219,20 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
-            <th>geometry</th>
-            <th>geography</th>
             <th>reference</th>
             <th>organisation</th>
+            <th>geography</th>
+            <th>name</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L1979">636ac78dd9a1...</a></td>
             <td>1978</td>
+                <td>P/1320/16</td> 
+                <td>local-authority-eng:HRW</td> 
+                <td>brownfield-site:P/1320/16</td> 
                 <td>Merrion Avenue, Jubilee House &amp; 39-45 (Odd), Stanmore</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -240,9 +246,6 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>brownfield-site:P/1320/16</td> 
-                <td>P/1320/16</td> 
-                <td>local-authority-eng:HRW</td> 
         </tr>    </tbody>
 </table>
 
