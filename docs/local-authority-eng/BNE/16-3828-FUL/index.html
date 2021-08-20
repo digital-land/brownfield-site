@@ -158,6 +158,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/BNE/16-3828-FUL</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                brownfield-site:16/3828/FUL            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BNE" class="govuk-link">London Borough of Barnet</a>
@@ -172,10 +176,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                16/3828/FUL            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                brownfield-site:16/3828/FUL            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
             <dd class="govuk-summary-list__value">                2020-12-22            </dd>
@@ -187,20 +187,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -220,9 +218,9 @@ crossorigin="" />
             <th>line</th>
             <th>name</th>
             <th>geography</th>
+            <th>geometry</th>
             <th>reference</th>
             <th>organisation</th>
-            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -231,8 +229,6 @@ crossorigin="" />
             <td>1692</td>
                 <td>Copped Close, 15 Totteridge Village, London, N20 8PN</td> 
                 <td>brownfield-site:16/3828/FUL</td> 
-                <td>16/3828/FUL</td> 
-                <td>local-authority-eng:BNE</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>16/3828/FUL</td> 
+                <td>local-authority-eng:BNE</td> 
         </tr>    </tbody>
 </table>
 

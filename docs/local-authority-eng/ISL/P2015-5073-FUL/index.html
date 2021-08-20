@@ -158,15 +158,15 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/ISL/P2015-5073-FUL</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Reference
-            </dt>
-            <dd class="govuk-summary-list__value">                P2015/5073/FUL            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/ISL" class="govuk-link">London Borough of Islington</a>
 <span title="Organisation identifier: local-authority-eng:ISL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ISL)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Reference
+            </dt>
+            <dd class="govuk-summary-list__value">                P2015/5073/FUL            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
@@ -187,20 +187,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -220,9 +218,9 @@ crossorigin="" />
             <th>line</th>
             <th>name</th>
             <th>geography</th>
+            <th>geometry</th>
             <th>reference</th>
             <th>organisation</th>
-            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -231,8 +229,6 @@ crossorigin="" />
             <td>1635</td>
                 <td>Garages at Thornton Court, undercroft garages to rear of 41-45, undercroft 1-12, 43-52 Hartham Road &amp; 76-98 Surr Street</td> 
                 <td>brownfield-site:P2015/5073/FUL</td> 
-                <td>P2015/5073/FUL</td> 
-                <td>local-authority-eng:ISL</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -245,6 +241,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>P2015/5073/FUL</td> 
+                <td>local-authority-eng:ISL</td> 
         </tr>    </tbody>
 </table>
 
