@@ -155,9 +155,14 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/brownfield-site/local-authority-eng/BDG/LBBD05</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                The Britannia Ph            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Reference
             </dt>
             <dd class="govuk-summary-list__value">                LBBD05            </dd>
@@ -165,10 +170,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                brownfield-site:LBBD05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                The Britannia Ph            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
@@ -178,7 +179,7 @@ crossorigin="" />
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
-            <dd class="govuk-summary-list__value">                None            </dd>
+            <dd class="govuk-summary-list__value">                511779            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -220,10 +221,10 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
+            <th>geography</th>
             <th>geometry</th>
             <th>reference</th>
-            <th>geography</th>
-            <th>name</th>
             <th>organisation</th>
         </tr>
     </thead>
@@ -231,6 +232,8 @@ crossorigin="" />
             <td>2020-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-site-collection/tree/main/transformed/brownfield-site/636ac78dd9a11bc5360057135ec930f8a824639d57b44ce51e0f94e993f00a1b.csv#L1055">636ac78dd9a1...</a></td>
             <td>1054</td>
+                <td>The Britannia Ph</td> 
+                <td>brownfield-site:LBBD05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,8 +247,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>LBBD05</td> 
-                <td>brownfield-site:LBBD05</td> 
-                <td>The Britannia Ph</td> 
                 <td>local-authority-eng:BDG</td> 
         </tr>    </tbody>
 </table>
